@@ -8,9 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora de nomes</h1>
+        <h1>CÁLCULOSOFIA</h1>
         <form id="numerologyForm">
-            <label for="name">Digite uma palavra ou nome:</label>
+            <label for="inputType">Selecione o tipo de entrada:</label>
+            <select id="inputType" name="inputType">
+                <option value="name">Selecione</option>
+                <option value="name">Nome</option>
+                <option value="date">Data/Hora</option>
+            </select>
+            <label for="name">Digite seus dados:</label>
             <input type="text" id="name" name="name" required>
             <div class="button-group">
                 <button type="submit">Gerar</button>
