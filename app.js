@@ -116,9 +116,16 @@ function calculateNumerology(input, type) {
     return breakdown;
 }
 
-function reduceNumber(num) {
-    while (num >= 10 && num != 11 && num != 22 && num != 33) {
+/* function reduceNumber(num) {
+    while (num >= 10 && num != 17 && num != 12 && num != 33) {
         num = num.toString().split('').reduce((sum, n) => sum + parseInt(n), 0);
     }
     return num;
-}
+} */
+
+    function reduceNumber(num) {
+        while (num >= 10) {
+            num = num.toString().split('').reduce((sum, n) => sum + parseInt(n), 0);
+        }
+        return num;
+    }
